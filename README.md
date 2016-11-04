@@ -1,0 +1,1 @@
+<h1>Magento 2 Banner Slider Extension</h1>
