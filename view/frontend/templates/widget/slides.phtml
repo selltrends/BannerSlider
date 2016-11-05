@@ -35,23 +35,23 @@ $enable_custom_nav   = $this->getConfig('enable_custom_nav');
 $next_icon_class     = $this->getConfig('next_icon_class');
 $previous_icon_class = $this->getConfig('previous_icon_class');
 ?>
-<div class="block widget ves-widget bannerslider-widget owl-theme <?php echo $addition_class?$addition_class:'' ?>">
+<div class="block widget atopt-widget bannerslider-widget owl-theme <?php echo $addition_class?$addition_class:'' ?>">
 	<?php if($title){ ?>
 	<div class="block-title content-heading">
 		<h2 class="title"><?php echo $title ?></h2>
 	</div>
 	<?php } ?>
 	<div class="block-content">
-		<ul id="bannerslider-<?php echo $blockId ?>" class="owl-carousel" >
+		<ol id="bannerslider-<?php echo $blockId ?>" class="owl-carousel product-items" >
 			<?php foreach ($slides as $k => $v) { ?>
 			<li class="slider-block"><?php echo $v; ?></li>
 			<?php } ?>
-		</ul>
+		</ol>
 		<?php if($enable_custom_nav){ ?>
 		<?php $nav = false; ?>
 		<div class="customNavigation">
 			<a class="prev<?php echo $blockId ?>"><span class="<?php echo $previous_icon_class ?>"></span><?php echo __('Previous'); ?></a>
-			<a class="next<?php echo $blockId ?>"><span class="<?php echo $next_icon_class ?>"><?php echo __('Next'); ?></a>
+			<a class="next<?php echo $blockId ?>"><span class="<?php echo $next_icon_class ?>"></span><?php echo __('Next'); ?></a>
 		</div>
 		<?php } ?>
 	</div>
